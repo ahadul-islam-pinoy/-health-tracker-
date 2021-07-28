@@ -1,0 +1,242 @@
+body {
+  font-family: "Work Sans", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+/* banner */
+
+.nav_img {
+  height: 2.625rem;
+  width: 2.75rem;
+  margin: 0 0.5625rem 0.125rem 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.banner {
+  background: url(images/mbr-10.jpg) no-repeat center;
+  padding: 12.5rem 0;
+  position: relative;
+  z-index: 1;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.575);
+  z-index: -1;
+}
+.banner_caption h4 {
+  margin-bottom: 2rem;
+  font-size: 1.7rem;
+}
+.banner_caption h2 {
+  margin-bottom: 3.125rem;
+  font-size: 3.1rem;
+}
+.banner_caption .form-control {
+  padding: 1.1875rem 1.5rem;
+}
+.banner_caption .btn {
+  font-size: 1.875rem;
+}
+.number_counter_item h2 {
+  font-size: 3.6rem;
+}
+.number_counter_item p {
+  font-size: 1.25rem;
+}
+.about {
+  background: #f7f9ff;
+}
+.about_information {
+  margin-top: 7.5rem;
+}
+.about_information h1 {
+  font-size: 3rem;
+}
+.about_information p {
+  font-size: 1.5rem;
+}
+/* feature */
+.feature-item {
+  height: 300px;
+  box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+}
+.img_side {
+  width: 40%;
+  overflow: hidden;
+  border-radius: 5px 0 0 5px;
+}
+.text_side {
+  width: 60%;
+  padding: 25px;
+}
+
+.img_side img {
+  height: 100%;
+  width: auto !important;
+  max-width: inherit;
+  position: relative;
+  left: -32px;
+}
+.feature_caption h1 {
+  font-size: 3.2rem;
+}
+.feature_caption h3 {
+  font-size: 1.8rem;
+}
+/* portfolio */
+.portfolio_caption h1 {
+  font-size: 2.8rem;
+}
+.portfolio_item a {
+  position: relative;
+  display: block;
+}
+.portfolio_item a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(98, 120, 223, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all ease-in-out;
+}
+.portfolio_item:hover a::after {
+  opacity: 1;
+  visibility: visible;
+}
+/* pricing */
+#pricing {
+  background-color: #f7f9ff;
+}
+.pricing_caption h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.25rem;
+}
+.pricing_caption p {
+  font-size: 1.55rem;
+}
+.pricing_table_content {
+  padding: 50px;
+  transition: 0.2s all ease-in-out;
+  border-radius: 0.5rem;
+}
+.pricing_table_content:hover {
+  box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+}
+.pricing_table_content ul {
+  padding-left: 0;
+  margin-bottom: 2.8125rem;
+}
+.pricing_table_content ul li {
+  list-style-type: none;
+  margin: 1.25rem 0;
+  font-size: 1.2rem;
+  color: #777;
+}
+.pricing_table_content ul li span {
+  color: #657be0;
+  display: inline-block;
+  font-size: 23px;
+  /* if u didn't use width here then everything going crazy  */
+  width: 45px;
+  font-weight: bold;
+}
+.pricing_tc_button button {
+  box-shadow: 2.5px 4.33px 30px 0 rgba(68, 78, 124, 0.2);
+  padding: 14px 30px;
+  font-size: 1.4rem;
+}
+/* feedback */
+.feedback_content > h1 {
+  font-size: 2.8rem;
+  margin-top: 1.5rem;
+}
+.feedback_content > span {
+  font-size: 70px;
+  color: #f0f0f0;
+}
+.user {
+  width: 203px;
+  margin: auto;
+}
+.user_name {
+  text-align: left;
+  position: relative;
+  top: 13px;
+  left: 12px;
+}
+.user img {
+  width: 80px;
+}
+/* team and history*/
+.team_history {
+  background-color: #f7f9ff;
+}
+.card_custom img {
+  width: 8.75rem;
+  margin-top: -5.25rem;
+}
+/* contact */
+.form-control::placeholder {
+  font-size: 20px;
+  color: #6c757d;
+}
+/* app */
+.app_img {
+  height: 365px;
+  width: 480px;
+  margin: 25px auto;
+}
+/* footer */
+footer {
+  background-color: #f7f9ff;
+}
+/* responsive start here*/
+@media all and (max-width: 992px) {
+  /* team and history */
+  .card_custom {
+    margin-bottom: 100px;
+  }
+  /* banner */
+  .banner_input {
+    margin-bottom: 15px;
+  }
+  /* pricing */
+  .pricing_table_content {
+    margin-bottom: 30px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+  }
+  /* Contact */
+  #contact {
+    margin-top: -170px;
+  }
+  /* feature */
+  .img_side img {
+    height: 100%;
+    width: 100% !important;
+    max-width: inherit;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .feature_cap_h1 {
+    padding-top: 0 !important;
+  }
+  /* about section */
+  .about_information {
+    margin-top: 0;
+  }
+}
